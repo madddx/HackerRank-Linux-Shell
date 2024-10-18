@@ -1,0 +1,7 @@
+while read input
+do
+    my_arr=("${my_arr[@]}" $input)
+done
+
+pattern=(${my_arr[@]/*[aA]*/})
+echo "${pattern[@]}"
