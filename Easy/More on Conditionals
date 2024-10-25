@@ -1,0 +1,11 @@
+read X
+read Y
+read Z
+
+if test $X -eq $Y -a $X -eq $Z; then
+  echo EQUILATERAL
+elif test $X -ne $Y -a $X -ne $Z -a $Z -ne $Y ; then
+  echo SCALENE
+else
+  echo ISOSCELES
+fi
