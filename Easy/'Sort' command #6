@@ -1,0 +1,9 @@
+#!/bin/bash
+rm file.txt > stdout.txt 2> stderr.txt
+while IFS= read -r line || [ -n "$line" ]; do
+  echo "$line" >> file.txt
+done
+# -n sort numeric
+# -k column sort
+# -t seperator type
+sort -n -k2 -t$'\t'< file.txt
