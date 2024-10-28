@@ -1,0 +1,2 @@
+#!/bin/bash/
+echo "$($* cut -d $'\t' -f 2-)"
