@@ -1,0 +1,1 @@
+grep -E -i -w "the|that|then|those"
