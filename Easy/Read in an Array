@@ -1,0 +1,6 @@
+while read input
+do
+x[$i]=$input
+i=$((i+1))
+done
+echo ${x[@]}
